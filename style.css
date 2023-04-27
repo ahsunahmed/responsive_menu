@@ -7,9 +7,9 @@ body{
     background: #ddd;
 }
 .header{
-    min-height: 100vh;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
 }
 
 /* NavBar CSS */
@@ -24,7 +24,6 @@ nav{
 .nav-links{
     flex: 1;
     text-align: center;
-
 }
 
 .nav-links ul li{
@@ -51,6 +50,31 @@ nav .fa{
     display: none;
 }
 
+/* Content Area CSS */
+.banner-area{
+    margin-top: 100px;
+}
+.banner-area,
+.about-area,
+.portfolio-area,
+.services-area,
+.contact-area{
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-bottom: 2px solid #eee;
+    padding: 150px 0;
+}
+.content{
+    width: 100%;
+    text-align: center;
+}
+.content p{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Responsive CSS */
 @media(max-width:700px){
     .text-box h1{
@@ -60,7 +84,7 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background-color: #f44336;
         top: 50px;
         right: -200px;
@@ -82,3 +106,5 @@ nav .fa{
         padding: 30px;
     }
 }
+
+
